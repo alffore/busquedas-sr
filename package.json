@@ -1,0 +1,26 @@
+{
+  "name": "busquedas-sr",
+  "version": "1.0.0",
+  "description": "Busquedas en BD SIC RENIC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alffore/busquedas-sr.git"
+  },
+  "keywords": [
+    "SIC",
+    "RENIC",
+    "postgresql",
+    "Node",
+    "BD"
+  ],
+  "author": "AAFR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alffore/busquedas-sr/issues"
+  },
+  "homepage": "https://github.com/alffore/busquedas-sr#readme"
+}
