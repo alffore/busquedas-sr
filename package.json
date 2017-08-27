@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/alffore/busquedas-sr/issues"
   },
-  "homepage": "https://github.com/alffore/busquedas-sr#readme"
+  "homepage": "https://github.com/alffore/busquedas-sr#readme",
+  "dependencies": {
+    "pg": "^7.2.0"
+  }
 }
