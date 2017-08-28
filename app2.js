@@ -25,7 +25,7 @@ const server = http.createServer((req,res) => {
   res.statusCode= 200;
   res.setHeader('Content-type','application/json');
 
-  pool.query('SELECT * FROM mvbusquedas LIMIT 100',(err,result) => {
+  pool.query('SELECT * FROM mvbusquedas LIMIT 1',(err,result) => {
     res.write(JSON.stringify(result));
     res.end();
   });
