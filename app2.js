@@ -29,7 +29,8 @@ const server = http.createServer((req,res) => {
       throw err;
     }
     res.write(JSON.stringify(result));
-  }
+  });
+  
   pool.end();
   res.end();
 });
