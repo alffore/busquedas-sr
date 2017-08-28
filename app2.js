@@ -7,11 +7,11 @@ const http = require('http');
 const { Pool, Client } = require('pg');
 
 const pool = new Pool({
-  user: '',
+	  user: 'userrenic',
   host: '127.0.0.1',
-  database: '',
+  database: 'nuevadbrenic',
   password: '',
-  port: 5432,
+  port: 5432
 });
 
 const hostname="127.0.0.1";
@@ -25,14 +25,11 @@ const server = http.createServer((req,res) => {
   res.setHeader('Content-type','application/json');
 
   pool.query('SELECT * FROM mvbusquedas LIMIT 100',(err,result) => {
-    if(err){
-      throw err;
-    }
     res.write(JSON.stringify(result));
+    res.end();
   });
-  
+
   pool.end();
-  res.end();
 });
 
 server.listen(port,hostname, () => {
