@@ -1,4 +1,5 @@
 /**
+* https://nodejs.org/en/docs/
 * https://node-postgres.com/
 *
 */
@@ -7,7 +8,7 @@ const http = require('http');
 const { Pool, Client } = require('pg');
 
 const pool = new Pool({
-	  user: 'userrenic',
+  user: 'userrenic',
   host: '127.0.0.1',
   database: 'nuevadbrenic',
   password: '',
